@@ -13,6 +13,9 @@
 		267B780F1D1EECEE00C54CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267B780D1D1EECEE00C54CE8 /* Main.storyboard */; };
 		267B78111D1EECEE00C54CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267B78101D1EECEE00C54CE8 /* Assets.xcassets */; };
 		267B78141D1EECEE00C54CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267B78121D1EECEE00C54CE8 /* LaunchScreen.storyboard */; };
+		26C6964F1D1EF044001FE3FB /* HBSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C6964E1D1EF044001FE3FB /* HBSplashView.m */; };
+		26C696521D1EF09B001FE3FB /* HBCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C696511D1EF09B001FE3FB /* HBCircleLayer.m */; };
+		26C696551D1EF3F0001FE3FB /* UIColor+HBHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C696541D1EF3F0001FE3FB /* UIColor+HBHexString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		267B78101D1EECEE00C54CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267B78131D1EECEE00C54CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		267B78151D1EECEE00C54CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26C6964D1D1EF044001FE3FB /* HBSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSplashView.h; sourceTree = "<group>"; };
+		26C6964E1D1EF044001FE3FB /* HBSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSplashView.m; sourceTree = "<group>"; };
+		26C696501D1EF09B001FE3FB /* HBCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCircleLayer.h; sourceTree = "<group>"; };
+		26C696511D1EF09B001FE3FB /* HBCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCircleLayer.m; sourceTree = "<group>"; };
+		26C696531D1EF3F0001FE3FB /* UIColor+HBHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HBHexString.h"; sourceTree = "<group>"; };
+		26C696541D1EF3F0001FE3FB /* UIColor+HBHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HBHexString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,12 @@
 		267B78031D1EECEE00C54CE8 /* HBSplashScreen_Objc */ = {
 			isa = PBXGroup;
 			children = (
+				26C6964A1D1EEFAF001FE3FB /* Common */,
 				267B78071D1EECEE00C54CE8 /* AppDelegate.h */,
 				267B78081D1EECEE00C54CE8 /* AppDelegate.m */,
 				267B780A1D1EECEE00C54CE8 /* ViewController.h */,
 				267B780B1D1EECEE00C54CE8 /* ViewController.m */,
+				26C6964B1D1EEFB7001FE3FB /* HBSplashView */,
 				267B780D1D1EECEE00C54CE8 /* Main.storyboard */,
 				267B78101D1EECEE00C54CE8 /* Assets.xcassets */,
 				267B78121D1EECEE00C54CE8 /* LaunchScreen.storyboard */,
@@ -77,6 +88,34 @@
 				267B78051D1EECEE00C54CE8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26C6964A1D1EEFAF001FE3FB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				26C696531D1EF3F0001FE3FB /* UIColor+HBHexString.h */,
+				26C696541D1EF3F0001FE3FB /* UIColor+HBHexString.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		26C6964B1D1EEFB7001FE3FB /* HBSplashView */ = {
+			isa = PBXGroup;
+			children = (
+				26C6964D1D1EF044001FE3FB /* HBSplashView.h */,
+				26C6964E1D1EF044001FE3FB /* HBSplashView.m */,
+				26C6964C1D1EEFB7001FE3FB /* HBSplashLayer */,
+			);
+			path = HBSplashView;
+			sourceTree = "<group>";
+		};
+		26C6964C1D1EEFB7001FE3FB /* HBSplashLayer */ = {
+			isa = PBXGroup;
+			children = (
+				26C696501D1EF09B001FE3FB /* HBCircleLayer.h */,
+				26C696511D1EF09B001FE3FB /* HBCircleLayer.m */,
+			);
+			path = HBSplashLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				267B780C1D1EECEE00C54CE8 /* ViewController.m in Sources */,
+				26C6964F1D1EF044001FE3FB /* HBSplashView.m in Sources */,
+				26C696521D1EF09B001FE3FB /* HBCircleLayer.m in Sources */,
 				267B78091D1EECEE00C54CE8 /* AppDelegate.m in Sources */,
+				26C696551D1EF3F0001FE3FB /* UIColor+HBHexString.m in Sources */,
 				267B78061D1EECEE00C54CE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +342,7 @@
 				267B781A1D1EECEE00C54CE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
