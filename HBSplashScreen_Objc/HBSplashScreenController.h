@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HBSplashScreenController.h
 //  HBSplashScreen_Objc
 //
 //  Created by Beans on 16/6/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HBSplashScreenController : UIViewController
 
 @end
-

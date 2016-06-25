@@ -7,15 +7,46 @@
 //
 
 #import "HBSplashView.h"
+#import "HBCircleLayer.h"
+
+@interface HBSplashView ()
+
+@property (nonatomic, strong) HBCircleLayer *circleLayer;
+
+@end
 
 @implementation HBSplashView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+#pragma mark - lazy load
+
+- (HBCircleLayer *)circleLayer {
+    if (!_circleLayer) {
+        _circleLayer = [[HBCircleLayer alloc] init];
+    }
+    return _circleLayer;
 }
-*/
+
+#pragma mark - init
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor whiteColor];
+        [self addCircleLayer];
+    }
+    return self;
+}
+
+#pragma mark -
+
+- (void)addCircleLayer {
+    [self.layer addSublayer:self.circleLayer];
+    [_circleLayer outspread];
+    [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(test) userInfo:nil repeats:NO];
+}
+
+- (void)test {
+    NSLog(@"test");
+}
 
 @end

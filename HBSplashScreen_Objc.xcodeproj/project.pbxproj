@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		267B78061D1EECEE00C54CE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B78051D1EECEE00C54CE8 /* main.m */; };
 		267B78091D1EECEE00C54CE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B78081D1EECEE00C54CE8 /* AppDelegate.m */; };
-		267B780C1D1EECEE00C54CE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B780B1D1EECEE00C54CE8 /* ViewController.m */; };
 		267B780F1D1EECEE00C54CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267B780D1D1EECEE00C54CE8 /* Main.storyboard */; };
 		267B78111D1EECEE00C54CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267B78101D1EECEE00C54CE8 /* Assets.xcassets */; };
 		267B78141D1EECEE00C54CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267B78121D1EECEE00C54CE8 /* LaunchScreen.storyboard */; };
 		26C6964F1D1EF044001FE3FB /* HBSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C6964E1D1EF044001FE3FB /* HBSplashView.m */; };
 		26C696521D1EF09B001FE3FB /* HBCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C696511D1EF09B001FE3FB /* HBCircleLayer.m */; };
 		26C696551D1EF3F0001FE3FB /* UIColor+HBHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C696541D1EF3F0001FE3FB /* UIColor+HBHexString.m */; };
+		26C696581D1EFDE0001FE3FB /* HBSplashScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C696571D1EFDE0001FE3FB /* HBSplashScreenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,6 @@
 		267B78051D1EECEE00C54CE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		267B78071D1EECEE00C54CE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		267B78081D1EECEE00C54CE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		267B780A1D1EECEE00C54CE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		267B780B1D1EECEE00C54CE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		267B780E1D1EECEE00C54CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		267B78101D1EECEE00C54CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267B78131D1EECEE00C54CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +33,8 @@
 		26C696511D1EF09B001FE3FB /* HBCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCircleLayer.m; sourceTree = "<group>"; };
 		26C696531D1EF3F0001FE3FB /* UIColor+HBHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HBHexString.h"; sourceTree = "<group>"; };
 		26C696541D1EF3F0001FE3FB /* UIColor+HBHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HBHexString.m"; sourceTree = "<group>"; };
+		26C696561D1EFDE0001FE3FB /* HBSplashScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSplashScreenController.h; sourceTree = "<group>"; };
+		26C696571D1EFDE0001FE3FB /* HBSplashScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSplashScreenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 				26C6964A1D1EEFAF001FE3FB /* Common */,
 				267B78071D1EECEE00C54CE8 /* AppDelegate.h */,
 				267B78081D1EECEE00C54CE8 /* AppDelegate.m */,
-				267B780A1D1EECEE00C54CE8 /* ViewController.h */,
-				267B780B1D1EECEE00C54CE8 /* ViewController.m */,
+				26C696561D1EFDE0001FE3FB /* HBSplashScreenController.h */,
+				26C696571D1EFDE0001FE3FB /* HBSplashScreenController.m */,
 				26C6964B1D1EEFB7001FE3FB /* HBSplashView */,
 				267B780D1D1EECEE00C54CE8 /* Main.storyboard */,
 				267B78101D1EECEE00C54CE8 /* Assets.xcassets */,
@@ -190,12 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267B780C1D1EECEE00C54CE8 /* ViewController.m in Sources */,
 				26C6964F1D1EF044001FE3FB /* HBSplashView.m in Sources */,
 				26C696521D1EF09B001FE3FB /* HBCircleLayer.m in Sources */,
 				267B78091D1EECEE00C54CE8 /* AppDelegate.m in Sources */,
 				26C696551D1EF3F0001FE3FB /* UIColor+HBHexString.m in Sources */,
 				267B78061D1EECEE00C54CE8 /* main.m in Sources */,
+				26C696581D1EFDE0001FE3FB /* HBSplashScreenController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
